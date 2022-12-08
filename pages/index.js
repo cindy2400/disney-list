@@ -3,9 +3,7 @@ import { Search } from "../components/ui/Search";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ disneys }) {
-  const getSearchTextHandler = (text) => {
-    console.log(text);
-  };
+  const getSearchTextHandler = (text) => {};
 
   return (
     <div className={styles.container}>
