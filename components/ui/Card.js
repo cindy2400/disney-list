@@ -1,5 +1,5 @@
 import styles from "../../styles/Card.module.scss";
 
-export const Card = ({ children }) => {
-  return <div className={styles.card}>{children}</div>;
+export const Card = ({ children, classname }) => {
+  return <div className={styles.card + " " + classname}>{children}</div>;
 };

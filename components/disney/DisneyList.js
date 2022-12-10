@@ -7,6 +7,7 @@ export const DisneyList = ({ disneys }) => {
       {disneys.map((disney) => {
         return (
           <DisneyItem
+            key={disney._id}
             id={disney._id}
             name={disney.name}
             image={disney.imageUrl}

@@ -1,7 +1,13 @@
 import { DisneyDetail } from "../components/disney/DisneyDetail";
 
 const disneyDetail = ({ disney }) => {
-  return <DisneyDetail name={disney.name} />;
+  return (
+    <DisneyDetail
+      name={disney.name}
+      image={disney.imageUrl}
+      tvShows={disney.tvShows}
+    />
+  );
 };
 
 export async function getStaticPaths() {
@@ -10,10 +16,10 @@ export async function getStaticPaths() {
   const data = response.data;
 
   return {
-    fallback: false,
     paths: data.map((item) => ({
       params: { disneyId: item._id.toString() },
     })),
+    fallback: false,
   };
 }
 
