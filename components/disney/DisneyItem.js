@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import NoImage from "../../public/no-image.PNG";
+import NoImage from "../../public/noImage.PNG";
 import { Card } from "../ui/Card";
 
 export const DisneyItem = ({ id, name, image }) => {

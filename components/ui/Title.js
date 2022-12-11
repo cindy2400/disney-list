@@ -3,7 +3,7 @@ import Styles from "../../styles/Title.module.scss";
 export const Title = () => {
   return (
     <div className={Styles.title}>
-      <div className={Styles["flex-title"]}>
+      <div className={Styles.flex}>
         <h1 className={Styles.red}>Disney </h1>
         <h1>List</h1>
       </div>
