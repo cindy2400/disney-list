@@ -17,7 +17,9 @@ const disneyDetail = ({ disney }) => {
 };
 
 export async function getStaticPaths() {
-  const getDisneyList = await fetch("https://api.disneyapi.dev/characters");
+  const getDisneyList = await fetch(
+    "https://api.disneyapi.dev/character?name="
+  );
   const response = await getDisneyList.json();
   const data = response.data;
 

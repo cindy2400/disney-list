@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import { DisneyList } from "../components/disney/DisneyList";
 import { Search } from "../components/ui/Search";
+import { Title } from "../components/ui/Title";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ disneys }) {
@@ -41,6 +42,7 @@ export default function Home({ disneys }) {
         <title>Home</title>
         <meta name="description" content="NextJS" />
       </Head>
+      <Title />
       <Search getSearchText={getSearchTextHandler} />
       <DisneyList disneys={disney} />
     </div>
@@ -48,7 +50,9 @@ export default function Home({ disneys }) {
 }
 
 export async function getStaticProps() {
-  const getDisneyList = await fetch("https://api.disneyapi.dev/characters");
+  const getDisneyList = await fetch(
+    "https://api.disneyapi.dev/character?name="
+  );
   const response = await getDisneyList.json();
   const data = response.data;
 
