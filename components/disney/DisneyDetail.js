@@ -1,10 +1,10 @@
 import Image from "next/image";
-import styles from "../../styles/DisneyDetail.module.scss";
+import Styles from "../../styles/DisneyDetail.module.scss";
 import { Card } from "../ui/Card";
 
 export const DisneyDetail = ({ name, image, tvShows }) => {
   return (
-    <Card classname={styles.container}>
+    <Card classname={Styles.container}>
       <h2>
         <u>{name}</u>
       </h2>
@@ -15,7 +15,7 @@ export const DisneyDetail = ({ name, image, tvShows }) => {
         tvShows.map((tvShow) => <Card key={name}>{tvShow}</Card>)
       )}
       <Image
-        className={styles.image}
+        className={Styles.image}
         alt={name}
         src={image}
         width={300}

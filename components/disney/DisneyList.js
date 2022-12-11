@@ -1,9 +1,9 @@
-import styles from "../../styles/DisneyItem.module.scss";
+import Styles from "../../styles/DisneyItem.module.scss";
 import { DisneyItem } from "./DisneyItem";
 
 export const DisneyList = ({ disneys }) => {
   return (
-    <div className={styles.disneyList}>
+    <div className={Styles.disneyList}>
       {disneys.map((disney) => {
         return (
           <DisneyItem

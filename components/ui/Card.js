@@ -1,5 +1,5 @@
-import styles from "../../styles/Card.module.scss";
+import Styles from "../../styles/Card.module.scss";
 
 export const Card = ({ children, classname }) => {
-  return <div className={styles.card + " " + classname}>{children}</div>;
+  return <div className={Styles.card + " " + classname}>{children}</div>;
 };

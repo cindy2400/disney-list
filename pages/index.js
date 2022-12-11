@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { DisneyList } from "../components/disney/DisneyList";
 import { Search } from "../components/ui/Search";
 import { Title } from "../components/ui/Title";
-import styles from "../styles/Home.module.css";
+import Styles from "../styles/Home.module.css";
 
 export default function Home({ disneys }) {
   const [disney, setDisney] = useState(disneys);
@@ -37,7 +37,7 @@ export default function Home({ disneys }) {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={Styles.container}>
       <Head>
         <title>Home</title>
         <meta name="description" content="NextJS" />
