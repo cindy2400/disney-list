@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useState } from "react";
-import NoImage from "../../public/noImage.PNG";
 import Styles from "../../styles/DisneyDetail.module.scss";
 import { Card } from "../ui/Card";
 
@@ -21,8 +20,8 @@ export const DisneyDetail = ({ id, name, image, tvShows }) => {
       <Image
         className={Styles.image}
         alt={name}
-        src={img ? img : NoImage}
-        onError={() => setImg(NoImage)}
+        src={img ? img : "/noImage.png"}
+        onError={() => setImg("/noImage.png")}
         width={300}
         height={300}
       />

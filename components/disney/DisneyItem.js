@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import NoImage from "../../public/noImage.PNG";
 import { Card } from "../ui/Card";
 
 export const DisneyItem = ({ id, name, image }) => {
@@ -14,8 +13,8 @@ export const DisneyItem = ({ id, name, image }) => {
           alt={name}
           width={200}
           height={200}
-          src={img ? img : NoImage}
-          onError={() => setImg(NoImage)}
+          src={img ? img : "/noImage.png"}
+          onError={() => setImg("/noImage.png")}
         />
       </Link>
       <p>{name}</p>
