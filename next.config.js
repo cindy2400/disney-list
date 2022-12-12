@@ -4,9 +4,6 @@ const nextConfig = {
   images: {
     domains: ["static.wikia.nocookie.net", "disney.fandom.com"],
   },
-  experimental: {
-    nftTracing: true,
-  },
 };
 
 module.exports = nextConfig;
