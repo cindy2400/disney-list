@@ -5,13 +5,13 @@ const disneyDetail = ({ disney }) => {
   return (
     <>
       <Head>
-        <title>{disney.name}</title>
+        <title>{disney?.name}</title>
       </Head>
       <DisneyDetail
         id={disney._id}
-        name={disney.name}
-        image={disney.imageUrl}
-        tvShows={disney.tvShows}
+        name={disney?.name}
+        image={disney?.imageUrl}
+        tvShows={disney?.tvShows}
       />
     </>
   );
