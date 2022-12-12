@@ -8,7 +8,7 @@ const disneyDetail = ({ disney }) => {
         <title>{disney?.name}</title>
       </Head>
       <DisneyDetail
-        id={disney._id}
+        id={disney?._id}
         name={disney?.name}
         image={disney?.imageUrl}
         tvShows={disney?.tvShows}
