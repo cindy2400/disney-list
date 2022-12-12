@@ -12,7 +12,7 @@ export const DisneyDetail = ({ id, name = "", image, tvShows }) => {
         <u>{name}</u>
       </h2>
       <p>TV Show : </p>
-      {tvShows.length === 0 ? (
+      {tvShows?.length === 0 ? (
         <p>No data available</p>
       ) : (
         tvShows.map((tvShow) => <Card key={id}>{tvShow}</Card>)
