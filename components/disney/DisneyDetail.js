@@ -3,7 +3,7 @@ import { useState } from "react";
 import Styles from "../../styles/DisneyDetail.module.scss";
 import { Card } from "../ui/Card";
 
-export const DisneyDetail = ({ id, name, image, tvShows }) => {
+export const DisneyDetail = ({ id, name = "", image, tvShows }) => {
   const [img, setImg] = useState(image);
 
   return (

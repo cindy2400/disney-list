@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Card } from "../ui/Card";
 
-export const DisneyItem = ({ id, name, image }) => {
+export const DisneyItem = ({ id, name = "", image }) => {
   const [img, setImg] = useState(image);
 
   return (
