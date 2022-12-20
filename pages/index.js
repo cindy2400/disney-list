@@ -50,9 +50,7 @@ export default function Home({ disneys }) {
 }
 
 export async function getStaticProps() {
-  const getDisneyList = await fetch(
-    "https://api.disneyapi.dev/character?name="
-  );
+  const getDisneyList = await fetch("https://api.disneyapi.dev/characters");
   const response = await getDisneyList.json();
   const data = response.data;
 

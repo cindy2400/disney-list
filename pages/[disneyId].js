@@ -28,7 +28,7 @@ export async function getStaticPaths() {
     paths: data.map((item) => ({
       params: { disneyId: item._id.toString() },
     })),
-    fallback: true,
+    fallback: false,
   };
 }
 
